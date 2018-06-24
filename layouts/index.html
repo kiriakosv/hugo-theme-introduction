@@ -13,7 +13,7 @@
                 Hi, I'm {{ .Site.Params.firstName | default "Introduction" }}.
             </h1>
             <h3 class="subtitle is-3 {{ if .Site.Params.fadeIn | default true }}fade-in two{{ end }}">
-                {{ .Site.Params.tagLine }}
+                {{ .Site.Params.tagLine }}<a href="{{ .Site.Params.companyUrl }}">{{ .Site.Params.company }}</a>
             </h3>
             <!-- End title and tagline -->
             <!-- Some social icons -->
